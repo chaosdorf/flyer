@@ -17,7 +17,7 @@
  a6paper,
  left=2.5mm,
  top=10mm,
- bottom=2.5mm,
+ bottom=-15mm,
  }
 \begin{document}
     \begin{center}
@@ -30,24 +30,30 @@
         \includesvg[scale=0.25]{../design/logos/logo-monochrome.svg}
 
         \vfill
+        
+        \hspace*{-1.5em}
+        \fboxsep4.4em
+        \colorbox{black}{
+            \begingroup
+                \color{white}
+                \setlength{\tabcolsep}{10pt} % Default value: 6pt
+                \renewcommand{\arraystretch}{2} % Default value: 1
 
-        \begingroup
-            \setlength{\tabcolsep}{10pt} % Default value: 6pt
-            \renewcommand{\arraystretch}{2} % Default value: 1
-
-            \begin{tabularx}{\textwidth}{ X X }
-                Sonnenstraße 58, \newline 40227 Düsseldorf & \vfill https://chaosdorf.de/  \\
-                mail@chaosdorf.de & @chaosdorf@chaos.social \\ 
-                +4921174958156 & \#chaosdorf:matrix.org
-            \end{tabularx}
-        \endgroup
+                \hspace*{-6.5em}
+                \begin{tabularx}{\textwidth}{ X X }
+                    Sonnenstraße 58, \newline 40227 Düsseldorf & \vfill https://chaosdorf.de/  \\
+                    mail@chaosdorf.de & @chaosdorf@chaos.social \\ 
+                    +4921174958156 & \#chaosdorf:matrix.org
+                \end{tabularx}
+            \endgroup
+        }
     \end{center}
 
     \newgeometry{
         a6paper,
         left=15mm,
         top=5mm,
-        bottom=5mm,
+        bottom=-7.5mm,
         right=15mm,
     }
     \newpage
@@ -58,8 +64,6 @@
     Hackspace für dich und für alle, die gemeinsam weiter kommen möchten.
     Hier gibt es Platz für deine Ideen und die nötige Inspiration,
     diese zu verwirklichen.
-
-    \vfill
 
     \section*{Freitagsfoo}
     Unser offener Abend ohne spezifisches Thema;
@@ -83,6 +87,15 @@
         \hline
     \end{tabular}
 
-    \section*{mehr?}
-    https://chaosdorf.de/termine
+    \vfill
+
+    \hspace*{-6.2em}
+    \fboxsep3.15em
+    \colorbox{black}{
+        \begingroup
+            \color{white}
+            mehr?
+            https://chaosdorf.de/termine
+        \endgroup
+    }
 \end{document}
