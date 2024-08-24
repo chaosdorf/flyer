@@ -1,0 +1,88 @@
+\documentclass{article}
+\usepackage{tabularx}
+\usepackage{url}
+\usepackage{svg}
+\svgsetup{inkscapeversion=1}
+\usepackage{fontspec}
+\newfontfamily\computer{Computerfont_1994 Regular}[
+    Extension=.ttf,
+    Path=../design/typography/computerfont/,
+]
+\setmainfont{CPMono_v07 Plain}[
+    Extension=.otf,
+    Path=../design/typography/cp-mono/,
+]
+\usepackage{geometry}
+ \geometry{
+ a6paper,
+ left=2.5mm,
+ top=10mm,
+ bottom=2.5mm,
+ }
+\begin{document}
+    \begin{center}
+        \thispagestyle{empty}
+        \hspace*{1.5em}
+        \includesvg[scale=0.5]{../design/logos/dorfhoernchen-monochrome.svg}
+
+        \vspace*{5em}
+        \hspace*{3em}
+        \includesvg[scale=0.25]{../design/logos/logo-monochrome.svg}
+
+        \vfill
+
+        \begingroup
+            \setlength{\tabcolsep}{10pt} % Default value: 6pt
+            \renewcommand{\arraystretch}{2} % Default value: 1
+
+            \begin{tabularx}{\textwidth}{ X X }
+                Sonnenstraße 58, \newline 40227 Düsseldorf & \vfill https://chaosdorf.de/  \\
+                mail@chaosdorf.de & @chaosdorf@chaos.social \\ 
+                +4921174958156 & \#chaosdorf:matrix.org
+            \end{tabularx}
+        \endgroup
+    \end{center}
+
+    \newgeometry{
+        a6paper,
+        left=15mm,
+        top=5mm,
+        bottom=5mm,
+        right=15mm,
+    }
+    \newpage
+    \thispagestyle{empty}
+
+    \section*{Spaß am Gerät!}
+    Das Chaosdorf ist ein Ort zum Lernen, Ausprobieren und Erfinden - ein
+    Hackspace für dich und für alle, die gemeinsam weiter kommen möchten.
+    Hier gibt es Platz für deine Ideen und die nötige Inspiration,
+    diese zu verwirklichen.
+
+    \vfill
+
+    \section*{Freitagsfoo}
+    Unser offener Abend ohne spezifisches Thema;
+    oft mit spontanen Kurzvorträgen ab 21:00 Uhr
+
+    \begin{tabular}{ c }
+        \\
+        \hline
+        Jeden Freitag ab 18:00 Uhr \\
+        \hline
+    \end{tabular}
+
+    \section*{Pythonfoo}
+    Wir versuchen uns mit mehr oder weniger nützlichen Projekten Python und
+    die Programmierung an sich gegenseitig beizubringen.
+
+    \begin{tabular}{ c }
+        \\
+        \hline
+        Jeden Donnerstag ab 18:00 Uhr \\
+        \hline
+    \end{tabular}
+
+    \section*{mehr?}
+    https://chaosdorf.de/termine
+\end{document}

@@ -1,1 +1,7 @@
 *.pdf
+svg-inkscape/
+*.aux
+*.log
+*.synctex.gz
+*.xdv
+*.fdb_latexmk
