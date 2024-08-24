@@ -1,0 +1,10 @@
+\documentclass[a4paper]{article}
+\usepackage[margin=0pt]{geometry}
+\usepackage[skins,raster]{tcolorbox}
+\pagestyle{empty}
+\begin{document}
+\begin{tcbraster}[raster height=\textheight,raster equal skip=0pt,blank,
+    graphics pages={1,1,1,1,  2,2,2,2}]
+  \tcbincludepdf{document.pdf}
+\end{tcbraster}
+\end{document}
